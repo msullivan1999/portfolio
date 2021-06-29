@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto-Regular.ttf");
+  }
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+
+body {
+    font-family: Roboto-Regular;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer, h1{
+    font-family: Roboto-Thin;
+}
+
+h1 #web-dev{
+    font-family: Roboto-Regular;
+}
