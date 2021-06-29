@@ -20,6 +20,58 @@ footer, h1{
     font-family: Roboto-Thin;
 }
 
+h1{
+    font-size: 50pt;
+    color: #707070;
+    margin: 0;
+}
+
+
 h1 #web-dev{
     font-family: Roboto-Regular;
+}
+
+#top-nav {
+    float:right;
+
+
+}
+
+/* #logo {
+    position: relative;
+} */
+
+#logo img{
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    height: 15%;
+    width: 15%
+
+}
+
+#intro{
+    padding-left: 250px;
+    padding-top: 180px;
+}
+
+#intro img{
+    position: absolute;
+    left: 800px;
+    top: 280px;
+}
+
+footer{
+    float:right;
+    padding: 30px;
+}
+
+nav a{
+    color:#707070;
+    margin-right: 50px;
+    font-size: 20pt;
+}
+
+nav {
+    margin-top: 70px;
 }
