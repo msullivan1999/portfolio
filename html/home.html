@@ -11,11 +11,11 @@
 
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-sm bg-light navbar-light py-3 fixed-top">
+<body class = "bg-light">
+  <nav class="navbar navbar-expand-sm bg-light navbar-light p-4 fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../image/personal_logo_3d.svg" alt="" width=50% height=50%>
+      <a class="navbar-logo" href="#">
+        <img class="img-fluid w-50" id = logo src="../image/personal_logo_3d.svg" alt="" >
       </a>
 
       <button
@@ -30,17 +30,44 @@
       <div class="collapse navbar-collapse" id="navmenu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="#learn" class="nav-link">What You'll Learn</a>
+            <a href="about.html" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#questions" class="nav-link">Questions</a>
+            <a href="projects.html" class="nav-link">Projects</a>
           </li>
           <li class="nav-item">
-            <a href="#instructors" class="nav-link">Instructors</a>
+            <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  
+  <br>
+  <br>
+
+  <section class="text-dark  pl-5">
+    <div class="container">
+      <div class = "d-sm-flex" id = intro>
+        <div >
+          <h1>Hi,</h1>
+          <h1>My name is Matt Sullivan</h1>
+          <h1>I'm an aspiring</h1>
+          <h1><span class="text-primary">Web Developer.</span></h1>
+        </div>
+        <img class="img-fluid w-50 mx-auto d-sm-block" id = dp src="../image/photo+background.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="links">
+    <div class="container">
+      <div class = "d-flex">
+        <a href="https://github.com/msullivan1999"><img class="img-fluid w-50" src="../image/git-blue.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/msullivan1999/"><img class="img-fluid w-50" src="../image/blue-li.svg" alt=""></a>
+        <a href="mailto: matt.r.sullivan1999@gmail.com"><img class="img-fluid w-50" src="../image/email-blue.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
