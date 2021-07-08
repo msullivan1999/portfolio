@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: Roboto-Regular;
     src: url("../fonts/Roboto-Regular.ttf");
   }
@@ -41,7 +41,7 @@ h1 #web-dev{
     position: relative;
 } */
 
-#logo img{
+/* #logo img{
     position: absolute;
     top: 60px;
     left: 80px;
@@ -74,4 +74,13 @@ nav a{
 
 nav {
     margin-top: 70px;
+}
+
+.navbar{
+    padding-top: 0;
+    border-top:0;
+} */
+
+.navbar-toggler {
+    border: none;
 }
