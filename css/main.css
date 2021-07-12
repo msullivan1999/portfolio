@@ -102,12 +102,27 @@ body {
     padding-right: 30px;
 }
 
-footer, h1{
+footer, h1, a{
     font-family: Roboto-Thin;
+    color: #4d4d4d;
 }
 
 #logo{
     max-width: 125px;
 }
+
+#my_work a{
+    text-decoration: none;
+    color: #4d4d4d;
+    padding-right: 20px;
+}
+
+/* #my_work {
+    padding-top: 20px;
+}
+
+#check {
+    padding-right: 20px;
+} */
 
 
