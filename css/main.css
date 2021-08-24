@@ -86,7 +86,7 @@ nav {
 }
 
 #intro {
-    padding-top: 20%;
+    padding-top: 18%;
     
 }
 
@@ -108,7 +108,9 @@ footer, h1, a{
 }
 
 #logo{
+    width: 100%;
     max-width: 125px;
+    min-width: 50px;
 }
 
 #my_work a{
