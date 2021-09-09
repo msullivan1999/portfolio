@@ -8,6 +8,9 @@ The website is being built using Adobe Illustrator, PhotoShop, XD, HTML, CSS, Bo
 https://www.presetsbyhaylsa.com/ --> good fonts
 
 To Do:
-- make logo size fluid
-- add typewriter functionality to intro
+- add typewriter functionality to intro (javaScript?)
 - possible: dynamic background?
+- get new fonts for headings/content in projects page
+- check why fourth according isn't collapsing
+- add dynamic background using js
+- make socials links responsive (size, x padding)
