@@ -1,4 +1,14 @@
 
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts/Roboto-Thin.ttf);
+  }
+
 .navbar-toggler {
     border: none;
 }
@@ -30,6 +40,7 @@ footer, h1, h2, h3, h4, h5, p, li, a{
     min-width: 50px;
 }
 
+/* Change all instancees where I use absolute values (pt) to responive units */
 #my_work a{
     text-decoration: none;
     color: #4d4d4d;
