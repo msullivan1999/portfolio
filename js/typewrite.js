@@ -1,11 +1,3 @@
-
-// edit: don't want to delete after writing
-// get rid of underline
-// make it type more quickly
-// remove underline
-// put all my text in here using inner html
-// longer pause at the end of each line
-
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -13,34 +5,32 @@ var TxtType = function(el, toRotate, period) {
     this.period = parseInt(period, 10) || 2000;
     this.txt = '';
     this.tick();
-    this.isDeleting = false;
+    this.lineDone = false;
 };
 
 TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
+    lineNo = 0
+    var fullTxt = this.toRotate[0];
 
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+    if (this.lineDone) {
+        lineNo++
+        lineDone = false
+    } 
+    else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = '<h1>'+this.txt+'</h1>';
 
     var that = this;
     var delta = 200 - Math.random() * 200;
 
-    if (this.isDeleting) { delta /= 2; }
+    if (!this.lineDone && this.txt === fullTxt) {
+        this.lineDone = true;
+        lineNo++;
+        
 
-    if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-    }
+    } 
 
     setTimeout(function() {
     that.tick();
@@ -56,9 +46,4 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
 };
