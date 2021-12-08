@@ -60,6 +60,7 @@ footer, h1, h2, h3, h4, h5, p, li, a{
 .socialLink{
     margin-right: 35%;
     margin-left: 0;
+    min-width: 50px;
 }
 
 a{
