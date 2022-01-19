@@ -62,9 +62,9 @@ footer, h1, h2, h3, h4, h5, p, li, a{
 
 
 .socialLink{
-    margin-right: 35%;
-    margin-left: 0;
-    /* min-width: px; */
+    min-width: 50px;
+    max-width: 200px;
+    height: auto;
 }
 
 a{
@@ -78,4 +78,19 @@ h5{
 
 .contact-form{
     padding-bottom: 10%;
+}
+
+#signature{
+    max-width: 15%;
+    min-width: 150px;
+    height: auto;
+}
+
+.links{
+    width: 40%
+}
+
+.arrow{
+    width: 20%;
+    min-width: 30ssspx;
 }
