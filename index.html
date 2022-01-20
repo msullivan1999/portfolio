@@ -41,27 +41,12 @@
       </div>
     </div>
   </nav>
-
-  <!-- test -->
-
-  <!-- <div class="container">
-    <h1>
-      <div class="typewrite" data-period="2000" data-type='[ "Hi, my name is Matt", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-        <!-- <span class="wrap"></span> -->
-      <!-- </div>
-    </h1>
-  </div> -->
   
   <section class="text-dark  pl-5">
     <div class="container">
       <div class = "d-sm-flex" id = intro>
-        <div>
-          <h1>Hi,</h1>
-          <h1>My name is Matt Sullivan</h1>
-          <h1>I'm an aspiring</h1>
-          <h1><span class="text-primary">Web Developer.</span></h1>
-        </div>
-        <img class="img-fluid w-50 mx-auto d-sm-flex" id = dp src="image/photo+background.svg" alt="">
+        <div id="intro-para"></div>
+        <div id=profile-pic><img class="img-fluid w-100 mx-auto d-sm-flex" id = dp src="image/photo+background.svg" alt=""></div>
       </div>
     </div>
   </section>
@@ -86,7 +71,25 @@
       </div>
     </div>
   </section>
-  <script src="js/typewrite.js"></script>
+  <div id="typewriter"></div>
+
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script type="text/javascript">
+    var app = document.getElementById('intro-para');
+      var typewriter = new Typewriter(app, {
+      loop: true
+    });
+
+    typewriter.typeString('Hi,<br>')
+        .pauseFor(1000)
+        .typeString('My name is Matt Sullivan<br>')
+        .pauseFor(1000)
+        .typeString('I\'m an aspiring<br>')
+        .pauseFor(1000)
+        .typeString('<span class="text-primary">Web Developer.</span>')
+        .pauseFor(7500)
+        .start();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
