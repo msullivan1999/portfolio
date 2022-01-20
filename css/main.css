@@ -27,11 +27,26 @@ body {
     min-width: 200px;
     padding-left: 30px;
     padding-right: 30px;
+    text-align: right;
 }
 
-footer, h1, h2, h3, h4, h5, p, li, a{
+/* #profile-pic {
+     width: 50%;
+     float: right;
+} */
+
+#intro-para {
+    width: 60%;
+    min-height: 60%
+}
+
+footer, h1, h2, h3, h4, h5, p, li, a, #intro-para{
     font-family: Roboto-Thin;
     color: #4d4d4d;
+}
+
+div#intro-para{
+    font-size:5vh;
 }
 
 /* h1{
