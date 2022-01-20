@@ -1,4 +1,11 @@
 <?php 
+
+// if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+//     header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+//     header("Access-Control-Allow-Headers: Authorization, Content-Type,Accept, Origin");
+// exit(0);
+// }
+
 if(isset($_POST['submit'])){
     $to = "matt.r.sullivan1999@gmail.com"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
